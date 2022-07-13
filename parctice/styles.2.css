@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+}
+
+.grandpa {
+  background-color: red;
+  height: 50vh;
+  width: 80vw;
+  /* width: 100vw;
+  height: 50vh; */
+  /* position: relative; */
+  /* height: 100%; */
+  /* height: 100vh; */
+  position: absolute;
+}
+
+.parants {
+  position: relative;
+  background-color: blue;
+  height: 10rem;
+}
+
+.child {
+  text-align: center;
+  background-color: green;
+  /* width: 100px;
+  height: 100px; */
+  /* this is with flex .. need in the parant do display:flex and in child margin:auto */
+  /* margin: auto; */
+
+  /* this is with absolute must have width or height*/
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  /* this is with  transform: translate
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%); */
+
+  /* text-align: center; */
+  /* top: 20rem; */
+  /* left: 20rem; */
+}

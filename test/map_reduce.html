@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const arr = [3, 5, 2, 7, 8];
+        const newArr = arr.map((item => {
+            if (item > 5)
+                return item
+            else
+                return null
+        }))
+        console.log(newArr); //return array [null, null, null, 7, 8]
+        // })).includes(7);
+        // console.log(newArr); //with include return true
+
+
+        const arr2 = [3, 5, 2, 7, 8, 11, 15];
+        console.log(arr2);
+        const newArr2 = arr2.map((item => {
+            if (item > 5)
+                return item
+            else
+                return null
+        })).reduce((acc, item) => {
+            // if (item !== null)
+            //     return acc + 1;
+            // else
+            //     return acc;
+
+            return item ? acc + 1 : acc
+
+        }, 0)
+        console.log(newArr2);
+
+    </script>
+</body>
+
+</html>

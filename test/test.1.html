@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+
+        // function a() {
+
+        // }
+        function sumByTerm({ term, value }) {
+            if (term === '>') {
+                return function (a, b, c, d) {
+                    var args = new Array(arguments.length);
+                    for (var i = 0; i < args.length; ++i) {
+                        args[i] = arguments[i];
+                    }
+
+                    var test = args.reduce(function (acc, curr) {
+                        if (curr > value)
+                            return acc + curr;
+                        else
+                            return acc + 0;
+                    }, 0);
+
+                    console.log(test);
+                }
+            }
+
+            if (term === '<') {
+                return function (a, b, c, d) {
+                    var args = new Array(arguments.length);
+                    for (var i = 0; i < args.length; ++i) {
+                        args[i] = arguments[i];
+                    }
+
+                    var test = args.reduce(function (acc, curr) {
+                        if (curr < value)
+                            return acc + curr;
+                        else
+                            return acc + 0;
+                    }, 0);
+
+                    console.log(test);
+                }
+            }
+
+        }
+        // sumByTerm({ term: '>', value: 5 })(4, 6, 7);
+        // sumByTerm({ term: '<', value: 2 })(-4, 7, 1, 0, 3);
+        // sumByTerm({ term: ">", value: 5 })(4, 6, 7);
+        const a = sumByTerm({ term: "<", value: 2 })(-4, 7, 1, 0, 3);
+
+        // const a = sumByTerm({ term: ">", value: 5 });
+        // a(4, 6, 7);
+        // console.log(a);
+    </script>
+</body>
+
+</html>

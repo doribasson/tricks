@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const run = ({ term, value }) => {
+            return function () {
+                // //take all the argumant from annymus function(4, 6, 7, 9, 2, 5)
+                // var args = new Array(arguments.length);
+                // for (var i = 0; i < args.length; ++i) {
+                //     args[i] = arguments[i];
+                // }
+
+                //the same like above just new and shorter deep copy
+                //take all the argumant from annymus function(4, 6, 7, 9, 2, 5)
+                console.log([...arguments]); // [4, 6, 7, 9, 2, 5]
+                // const args = [...arguments];
+                // console.log(args);
+
+                // const test = args.reduce((acc, curr) => {
+                const test = [...arguments].reduce((acc, curr) => {
+                    if (term === '>') {
+                        if (curr > value)
+                            return acc + curr;
+                        else
+                            return acc;
+                    }
+
+                    else if (term === '<') {
+                        if (curr < value)
+                            return acc + curr;
+                        else
+                            return acc;
+                    }
+                }
+                    , 0);
+
+                // console.log(test);
+                return test;
+            }
+        }
+
+
+        // sumByTerm({ term: '>', value: 5 })(4, 6, 7, 9, 2, 5);
+        // sumByTerm({ term: '<', value: 2 })(-4, 7, 1, 0, 3);
+        // sumByTerm({ term: ">", value: 5 })(4, 6, 7);
+
+        const b = run({ term: '>', value: 5 })(4, 6, 7, 9, 2, 5);
+        console.log(b);
+
+        const c = run({ term: '<', value: 2 })(-4, 7, 1, 0, 3);
+        console.log(c);
+
+        const d = run({ term: '>', value: 1 })(0, 7, 1, 4, 3);
+        console.log(d);
+
+
+        // const b = sumByTerm({ term: '>', value: 5 })(4, 6, 7, 9, 2, 5);
+        // console.log(b);
+
+        // const a = sumByTerm({ term: "<", value: 2 })(-4, 7, 1, 0, 3);
+        // console.log(a);
+
+
+        // const a = sumByTerm({ term: ">", value: 5 });
+        // a(4, 6, 7);
+        // console.log(a);
+    </script>
+</body>
+
+</html>

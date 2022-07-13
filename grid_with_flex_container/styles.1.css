@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  /* background-color: red; */
+  height: 100vh;
+  display: grid;
+  grid-template: 1fr 9fr 1fr / 1fr;
+  grid-template-areas:
+    "heder"
+    "body"
+    "footer";
+}
+
+.header {
+  background-color: blue;
+}
+
+.body {
+  background-color: green;
+}
+
+.footer {
+  background-color: yellow;
+}

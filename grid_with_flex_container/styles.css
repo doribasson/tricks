@@ -1,0 +1,68 @@
+/* all with flex */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  /* background-color: red; */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.container_nav {
+  display: flex;
+  height: 4em;
+}
+
+.logo {
+  flex: 0.05;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.header {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  background-color: blue;
+}
+
+.body {
+  width: 100%;
+  background-color: red;
+  flex: 0.95;
+  font-size: 2rem;
+  width: 100%;
+  padding: 1em 2em;
+  /* height: 100%; */
+  overflow-y: auto;
+}
+
+.body > section {
+  /* height: 100%; */
+}
+
+.body > section > p {
+  display: flex;
+  margin-top: 1rem;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex: 0.05;
+  margin: auto;
+  align-items: flex-end;
+  font-size: 2rem;
+}
