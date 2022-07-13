@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const arr = [1, 26, 3, 4444, 5, 66, 7777777, 88888888, 9, 10, 11];
+        let max = sumDigit(arr[0]);
+        let num;
+
+        function sumDigit(num) {
+            // console.log(num)
+            let countDigit = 0;
+            let sum = 0;
+            while (num > 0) {
+                // sum += num % 10;
+                num = Math.floor(num / 10);
+                countDigit++;
+            }
+            return countDigit;
+        }
+
+        // console.log(max);
+
+        // console.log(countDigit); //typeof number
+        // console.log(num.toString().length); //type of number
+
+
+        for (let i = 0; i < arr.length; i++) {
+            if (sumDigit(arr[i]) > max)
+                max = sumDigit(arr[i]);
+        }
+        console.log(`the max digits is ${max}`);
+        // sumDigit(num)
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- count the digit on number
+function getlength(number) {
+    return number.toString().length;
+}
+
+or
+
+function sumDigit(num) {
+    let countDigit = 0;
+    while (num > 0) {
+        num = Math.floor(num / 10);
+        countDigit++;
+    }
+    return countDigit;
+} -->
+
+
+
+
+<!-- function sumDigit(num) {
+    // console.log(num)
+    let countDigit = 0;
+    let sum = 0;
+    while (num > 0) {
+        // sum += num % 10;
+        num = Math.floor(num / 10);
+        countDigit++;
+    }
+    return countDigit;
+} -->
+
+
+
+<!-- 
+const sumDigit = n => {
+    let temp = ((n - 1) % 9) + 1; //untill 9..
+    console.log(temp);
+  }; -->

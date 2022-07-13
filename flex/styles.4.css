@@ -1,0 +1,59 @@
+/* with flex */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  height: 100vh;
+  background-color: #444;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex: 0.07;
+  background-color: #444;
+  /* padding: 0.3em 0.6em; */
+}
+
+.header > ul {
+  /* display: flex; */
+  margin: auto auto;
+  background-color: white;
+  text-align: center;
+  /* justify-content: center; */
+}
+
+.header > ul > li {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.body {
+  flex: 1;
+  background-color: green;
+  overflow-y: auto;
+}
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: auto auto;
+  align-items: center;
+
+  flex: 0.03;
+  /* height: 2rem; */
+  /* line-height: 5rem; */
+  font-size: 0.5rem;
+}
+
+.footer > span {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 0.8rem;
+}

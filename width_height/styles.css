@@ -1,0 +1,106 @@
+.container {
+  width: 80vw;
+  background-color: red;
+  height: 100vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* 
+    will be center so if is 80vw will be 10 margin-left 10 margin-right 
+  margin-left: 10%;
+  margin-right: 10%; */
+
+  /* will be center so if is 80vw will be 10 left 10 right */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+/* .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: green;
+} */
+
+.heder {
+  display: flex;
+  width: 100%;
+  background-color: blue;
+  line-height: 2.5rem;
+  justify-content: space-between;
+  color: white;
+}
+.heder > span {
+  /* position: relative;
+  top: 1.3rem;
+  margin-left: 2rem; */
+  display: flex;
+  margin: auto 2rem;
+  font-size: 1.5rem;
+  /* align-self: center; */
+}
+.heder > ul {
+  display: flex;
+  margin-right: 3rem;
+  list-style-type: none;
+  position: relative;
+  top: 0.5rem;
+  /* background-color: yellow; */
+}
+
+.heder > ul > li {
+  /* background-color: green; */
+  width: 100px;
+}
+
+.body {
+  flex: 1;
+  background-color: black;
+}
+
+.body > section {
+  background-color: black;
+  color: #ffffff;
+  /* height: 100%; */
+  display: flex;
+
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  width: 100%;
+
+  /* flex-wrap: wrap; */
+
+  /* height: 90%;
+  overflow-y: scroll; */
+}
+
+.body > section > p {
+  font-size: 1.5rem;
+  /* width: 100px; */
+  height: 100%;
+  padding: 0rem 1em;
+  line-height: 2rem;
+  display: flex;
+  /* word-break: break-all; */
+}
+
+.footer {
+  display: flex;
+  line-height: 40px;
+  width: 100%;
+  background-color: green;
+}
+.footer > span {
+  font-size: 1.3rem;
+  color: white;
+  margin: auto auto;
+  background-color: #444;
+  /* padding: 0 2em; */
+}

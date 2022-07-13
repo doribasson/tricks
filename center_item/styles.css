@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+}
+
+/* first 1 with flexbox - */
+.container1 {
+  background-color: red;
+  /* color: red; */
+  /* width: 100%; */
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  /* align-items: center;  not nedd because we do to spesific element center with  align-self: center; in item
+    */
+}
+
+.item1 {
+  background-color: blue;
+  /* width: 50%; */
+  align-self: center;
+  flex: 0.5;
+  height: 100px;
+}
+
+/* **************************************************************************************** */
+
+/*  2 with margin auto   */
+
+.container2 {
+  text-align: center;
+}
+
+.item2 img {
+  width: 13%;
+  height: 100vh;
+  object-fit: contain;
+}
+
+/* ************************************************************************************ */
+
+/*  3 with margin auto just horizontal centering   */
+
+.container3 {
+}
+
+.item3 img {
+  display: block;
+  width: 13%;
+  /* height: 100vh; if we add this it will do incrase the image to screen and
+    with  object-fit he will fix the size
+      object-fit: contain;
+    */
+  /* height: 100vh;
+    object-fit: contain; */
+  margin: 0 auto;
+}
+
+/* ******************************************************************************* */
+
+/* 4 with table-cell centering  - */
+.container4 {
+  /* border: 1px solid blue; */
+  display: table;
+  height: 100vh;
+  width: 100%;
+}
+
+.item4 {
+  border: 1px solid #000000;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.item4 img {
+  border: 1px solid red;
+  width: 13%;
+  height: auto;
+}
+
+/* ************************************************************************************** */
+
+/* 5 with Absolute Centering - */
+.container5 {
+  position: relative;
+  height: 100vh;
+}
+
+.item5 img {
+  width: 13%;
+  min-width: 200px;
+  height: auto;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* ***************************************************************************************** */
+
+/* 6 with horizontal and vertical centering - not support with old version 8 and earlier - */
+.container6 {
+  background: hsl(180, 100%, 97%);
+  position: relative;
+  min-height: 800px;
+}
+
+.item6 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13%;
+  height: auto;
+}
+
+/* ***************************************************************************************** */
+
+/* 7 with very good support across browsers - */
+.container7 {
+  position: relative;
+  min-height: 400px;
+  background: hsl(200, 100%, 97%);
+}
+
+.item7 img {
+  width: 13%;
+  /* min-width: 300px; */
+  height: auto;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* ***************************************************************************************** */
+
+/* 8 Centering With calc not support across browsers - */
+.container8 {
+  background: hsl(300, 100%, 97%);
+  min-height: 800px;
+  position: relative;
+}
+
+.item8 img {
+  width: 13%;
+  height: 500px;
+  position: absolute;
+  object-fit: contain;
+  top: calc(50% - (500px / 2));
+  left: calc(50% - (13% / 2));
+}
+/* ***************************************************************************************** */
+
+/* 9 This doesn’t align the image vertically just horizontally   - */
+.container9 {
+  text-align: center;
+  background: hsl(0, 100%, 97%);
+}
+
+.item9 img {
+  width: 13%;
+  height: auto;
+}
+/* ***************************************************************************************** */
+
+/* 10  Centering with margin: auto ...just horizontal centering   - */
+.container10 {
+  background: hsl(0, 100%, 97%);
+  /* height: 100vh; */
+}
+
+.item10 img {
+  display: block;
+  width: 13%;
+  /* object-fit: contain;
+  height: 100vh; */
+  margin: 0 auto;
+}
+/* ***************************************************************************************** */
+
+/* 11  Centering with table-cell,  - */
+.container11 {
+  display: table;
+  background: hsl(120, 100%, 97%);
+  width: 33%;
+  margin: 0 auto;
+  height: 90vh;
+}
+
+.item11 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #000000;
+}
+
+.item11 img {
+  width: 23%;
+  height: auto;
+  border: 1px solid red;
+}
+
+/* ***************************************************************************************** */
+
+/* 12 very good support across browsers..downside is that some form of height must be declared for the outer container:   - */
+.container {
+  position: relative;
+  min-height: 70vh;
+  background: hsl(200, 100%, 97%);
+}
+
+.item img {
+  width: 13%;
+  min-width: 200px;
+  height: auto;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* ***************************************************************************************** */
+
+/* 13 very good support across browsers..downside is that some form of height must be declared for the outer container:   - */
+.container13 {
+  position: relative;
+  min-height: 70vh;
+  background: hsl(200, 100%, 97%);
+  z-index: -1;
+}
+
+.item13 img {
+  width: 13%;
+  min-width: 200px;
+  height: auto;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.item2 img {
+  position: relative;
+  z-index: 2;
+  width: 5%;
+  min-width: 200px;
+  /* height: auto; */
+}
+
+/* add to html     
+  <div class="item2">
+        <img
+          src="https://www.iconsdb.com/icons/preview/green/twitter-4-xxl.png"
+          alt
+        />
+      </div>
+  */
+/* ***************************************************************************************** */
