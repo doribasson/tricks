@@ -1,0 +1,12 @@
+https://cloudinary.com/ מדיה תמונות Dori1234@gmail.com
+Cloud name:	
+dhgakic89
+API Key:	
+839388698494669
+ Copy to clipboard
+API Secret:	
+***************************
+ Copy to clipboard Reveal
+Environment variable:	
+CLOUDINARY_URL=cloudinary://***************:***************************@dhgakic89
+ Copied to clipboard

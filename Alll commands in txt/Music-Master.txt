@@ -1,0 +1,49 @@
+﻿{
+  "artists": {
+    "href": "https://api.spotify.com/v1/search?query=bruno&type=artist&offset=0&limit=1",
+    "items": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C"
+        },
+        "followers": {
+          "href": null,
+          "total": 21314075
+        },
+        "genres": [
+          "dance pop",
+          "pop",
+          "post-teen pop"
+        ],
+        "href": "https://api.spotify.com/v1/artists/0du5cEVh5yTK9QJze8zA0C",
+        "id": "0du5cEVh5yTK9QJze8zA0C",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/aa32d6d4ca2467974403518dd3ebfe8831c5ced1",
+            "width": 640
+          },
+          {
+            "height": 320,
+            "url": "https://i.scdn.co/image/63cad86cb183568085a4e5f0be86aa187cc511e4",
+            "width": 320
+          },
+          {
+            "height": 160,
+            "url": "https://i.scdn.co/image/5461dcbb3f23e1df62d85c8273fc49cc4edd49d5",
+            "width": 160
+          }
+        ],
+        "name": "Bruno Mars",
+        "popularity": 91,
+        "type": "artist",
+        "uri": "spotify:artist:0du5cEVh5yTK9QJze8zA0C"
+      }
+    ],
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?query=bruno&type=artist&offset=1&limit=1",
+    "offset": 0,
+    "previous": null,
+    "total": 2664
+  }
+}

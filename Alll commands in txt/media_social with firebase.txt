@@ -1,0 +1,61 @@
+npm install firebase-functions@latest firebase-admin@latest --save
+$ npm install -g firebase-tools
+$ firebase login
+$ firebase init   		choose function
+$ firebase deploy אחרי כל שינוי נעשה דיפוליי שיעדכן את הפיירסבייס
+firebase deploy --only functions:api,functions:createScream
+firebase serve   הוא מריץ את זה לוקלי ככה יותר מהר מהדיפלוי הרגיל 
+npm install --save express  נתקין בתוך תקייה function 
+npm install --save firebase
+
+at the link in the postman for get and post
+https://us-central1-socialapp-2a194.cloudfunctions.net/helloWorld
+https://us-central1-socialapp-2a194.cloudfunctions.net/getScreams
+http://localhost:5000/socialapp-2a194/us-central1/createScream
+http://localhost:5000/socialapp-2a194/europe-west2/api/signup
+
+write at the body postman
+{
+	"body": "New scream3",
+	"userHandle": "new3"
+}
+
+
+
+
+
+
+$env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\username\Downloads\service-account-file.json"
+
+set GOOGLE_APPLICATION_CREDENTIALS="C:\social_media\functions\env\serviceAccountKey.json"
+
+
+
+
+
+# Remove node_modules
+rm -fr node_modules
+
+# Reinstall packages
+npm i
+
+# Commit changes
+git add node_modules
+git commit -m 'Fix node_modules dependencies.'
+git push heroku master
+
+
+{
+	"email": "user@gmail.com",
+	"password": "123456",
+	"confrimPassword": "123456",
+	"Handle": "user"
+}
+
+
+{
+	"body": "new scream112",
+	"userHandle": "dori101"
+}
+
+

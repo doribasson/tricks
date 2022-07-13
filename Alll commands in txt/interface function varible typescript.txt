@@ -1,0 +1,147 @@
+
+class interface func arrowfunc let const typescript varible
+
+let b: boolean = false;
+console.log(b);
+
+let c: number = 10;
+console.log(c);
+
+let d: number = 0o123;
+
+let firstname: string = "dori";
+
+let aa: string[] = ["TS", "JS"];
+let ab: Array<string> = ["TS", "TS"]; //any value
+
+let ac: [number, string];
+
+const ad = 10;
+
+enum fruit {
+  apple = 1, //if we remove the 1 we get apple start with 0
+  banana, //automatic 2
+  mango, //automatic 3
+  orange //automatic 4
+}
+
+let fruitname: string = fruit[2];
+console.log(fruitname);
+
+let ag: any; //ag can hold any value number string ...
+ag = 10;
+ag = "dori"; //will work because any
+
+// let agg: number; //ag can hold any value number string ...
+// agg = 10;
+// agg = "dori"; //error not work
+
+function myfunc() {
+  for (var i = 1; i <= 2; i++) {
+    console.log("welcome");
+  }
+  console.log("Final" + i);
+}
+myfunc(); //the value of i is 3 .. if we do let i  for(let i=1; i<=2; i++) { so error not in scope
+
+// let myvr:string = "dori";
+//myvr.   give suggesttion
+
+// let myvr;
+//myvr.   not give suggesttion
+
+let myvr;
+<string>myvr.concat("fdfd");
+//let myvr2 : number = (<string>myvr).
+// let myvr3 : number = (<string>myvr).concat("fdfd"); //error
+//let myvr3: string = (<string>myvr).
+let myvr3: string = (<string>myvr).concat("fdfd");
+let myvr2: string = (myvr as string).concat("fdfd");
+
+// let z=3;
+// function product(x,y) {
+//     return x*y*z;
+// }
+// console.log(product(3,5));
+
+let z = 3;
+function product(x: number, y: number) {
+  return x * y * z;
+}
+console.log(product(3, 5));
+
+//anonymous
+let w = function(x, y) {
+  return x * y;
+};
+console.log(w(4, 6));
+
+//arrow function
+let ex = a => console.log(a);
+
+let exx = a => {
+  return console.log(a);
+};
+
+let exxx = function(a) {
+  return console.log(a);
+};
+
+//Class
+class MyClass {
+  j: number;
+  constructor(k: number) {
+    this.j = k;
+  }
+  value() {
+    return "the number is" + this.j;
+  }
+}
+
+let myobj = new MyClass(6);
+console.log(myobj.value);
+
+//class child extends parent
+class ParentsClass {
+  protected j: number;
+  constructor(k: number) {
+    this.j = k;
+  }
+}
+class ChildClass extends ParentsClass {
+  l: number;
+  constructor(m: number, k: number) {
+    super(k);
+    this.l = m;
+  }
+  value() {
+    return (
+      "Value from parents is " +
+      this.j +
+      " and the value from child is" +
+      this.l
+    );
+  }
+}
+let newobj = new ChildClass(12, 33);
+console.log(newobj.value());
+
+//Interface
+interface MyIntegers {
+  s: number;
+  t: string;
+  myFunc();
+}
+class A implements MyIntegers {
+  s: number;
+  t: string;
+  constructor(s: number, t: string) {
+    this.s = s;
+    this.t = t;
+  }
+  myFunc() {
+    console.log("implementimg an interface" + this.s + " " + this.t);
+  }
+}
+let o = new A(1, "Hi!");
+console.log(o.myFunc());

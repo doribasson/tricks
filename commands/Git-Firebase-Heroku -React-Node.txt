@@ -1,0 +1,87 @@
+אחרי שיצרנו פרויקט בריאקט
+
+לעלות לפיירבייס
+1.ניצור פרויקט בפיירבייס
+2.נילך להוסטינג ונראה את הפקודות
+3.npm install -g firebase-tools
+4.firebase login //אם נרצה להיכנס אם גמייל אחר אז נרשום  firebase logout --> firebase login --> allow firebase choose no and then authentication
+5.firebase init --> allow.. proceed? yes --> hosting --> use an ex... -> dori-weather--> public directory? build --> single-app app ? y
+6.npm run build
+7.firebase deploy
+
+
+
+לעלות לגיטהאב
+irst add repestory in github
+go to dierctiory project in gitbash
+1. git init
+2. git add -A   or   git add .
+5. git commit -m 'Init commit'
+6. git remote add origin https://github.com/doribasson/dori_weather.git
+7.git push -u origin master
+
+
+הוספה לגיט ושינויים
+git status יראה לנו מה יש ומה השתנה
+git add -A  יעשה את השינוי
+git status  נבדוק שאכן ביצע
+git commit -m 'Init commit2' נקרא לזה בשם שנדע שזה השינוי 
+git remote -v יראה לנו מה יש ומה הרפסטורי
+git push origin master יכניס לתוך הגיטהאב את השינוי
+
+branch - שכל מפתח יצור פיצר משלו בלי שישפיע על כל הפרויקט ובמידה והפיצר תקין ונרצה אותו בפרויקט הגדול נעשה לו מארג
+git log --oneline  מציג את  כל הקומיטים
+git branch feature-1 יוצר בראנצ בשם פיצר1
+git branch -a   מציג על איזה בראנץ אני נמצא מכל הבראנצים
+git checkout feature-1 מהבראנץ של מסטר עובר לבראנץ של פיצר1
+git branch -D feature-1  מוחק את הברנצ של פיצר1 
+git checkout -b feature-2  גם יוצר בראנץ פיצר2 וגם נכנס לבראנץ הזה
+git merge feature-1 ממזג את פיצר1 לתוך המסטר שזה הפרויקט הגדול 
+
+
+
+if not work
+3. git config --global user.email "you@example.com"
+4. git config --global user.name "Your Name"
+delete git => rm -rf .git 
+
+
+לעלות להירוקו
+ניצור פרויקט באתר הירוקו
+$ heroku login נבדוק שאנחנו מחוברים
+heroku git:clone -a dorib-weatherUse Git to clone dorib-weather's source code to your local machine.
+git add .
+git commit -am "make it better"
+git push heroku master
+
+
+שינויים לעלות להירוקו
+קודם נעדכן את הגיט
+git add . מעדכן את השינויים בגיטהאב
+git commit -m 'Init commit2' הערה לגירסת העדכון
+git push origin master  מכניס את העדכון לגיטהאב
+git push heroku master  מעדכן את הירוקו
+
+
+heroku git:remote -a dori-new אם עשיתי כבר גיט רפסטורי dori-new -שם הפרויקט בהירוקו
+
+להסתיר סיסמא או מפתח למשל בריאקט
+ process.env.REACT_APP_WEATHER_API_KEY;
+
+Install dotenv as devDependencies: לא חייב בגירסה החדשה
+Update the .env file like below & REACT_APP_ is the compulsory prefix for the variable name.
+ REACT_APP_API_KEY=YOUR-API-KEY   חייב להתחיל במילה REACT_APP_
+לגשת ?
+או
+export const API_KEY = process.env.REACT_APP_API_KEY; 
+process.env.REACT_APP_API_KEY;   לגשת ישירות
+
+
+
+
+
+
+https://github.com/settings/developers
+
+
+max 600 mobile,max 992 ipad , max 1400 laptop ,min 1400 pc

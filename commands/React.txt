@@ -1,0 +1,796 @@
+npm view react version
+npm view react-native version
+Success! Created portfolio at C:\MyWeb\portfolio
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd portfolio
+  npm start
+
+Happy hacking!
+
+npx create-react-app .  מתקין את החבילה של ריאקט הנקודה אורמת תתקין בתןף התקיה הזאת
+create-react-app <project-directory>
+
+תיקון הזחות shift+alt+f
+
+npm install bootstrap uuid --save
+npm init -y - מכניס לנו לפרויקט package.json בשביל שיטען לנו בשרת
+npm i parcel-bundler@1.10.3 --save שזה שני סקריפטים שאפר להשמש בריאקט ובריאקט דום אז אפשר להתקין על מודל נודCDNבמקום להשמתש ב
+במקום אלה 
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+שזה בדף Index.html
+
+עכשיו נתקין את הריאקט והריקטדום
+npm i react@16.6.3 react-dom@16.6.3 --save
+npm i parcel-bundler@1.10.3 react@16.6.3 react-dom@16.6.3 --save בשביל שיתחבר אם מתחילים מ אפס את הפרויקט
+npm i @babel/plugin-proposal-class-properties@7.2.3 --save בשביל התמיכה
+ואז נוסיף קובץ babelrc
+npm i live-server@1.2.1 --save אומר לסרבר מודל לטעון את הספרייה לכל מי שמבקש
+npm i uudid  -> if have warning two childeren with the same key.. he give new difrrent id
+
+"dev": "parcel src/index.html", //just run without open the browser ..with http://localhost:1234/
+    "build": "parcel build src/index.html",
+    "start": "npm run build && Live-server dist" //open the browser too with localhost 8ttp://127.0.0.1:8080/80
+
+npm i react-router-dom@4.3.1 --save  בשביל להפריד תכנים במקום שיהיה רק באחד
+npm i react-router-dom -- give to move compoenent link in our project
+npm i install axios // he replace the fetch..give data from api to an object to our project
+npm i history@4.7.2 --save  history module install
+npm i @babel/core@7.2.2 @babel/plugin-proposal-class-properties@7.2.3 --save
+npm i live-server@1.2.1 --save
+cat package.json
+npm i redux@4.0.1 react-redux@6.0.0 --save -- give all state in one file 
+npm i redux-thunk@2.3.0 --save   give middleware that allow to dispatch entire functions including vets requests as an action  
+				is going to hold on to the redux dispatch until an action with an inner function has completed 
+npm i redux react-redux redux-thunk - istall 3 thing 
+npm i pubnub@4.21.6 --save  -- for reaction post
+
+פקודות bash
+cp -r ../portfolio/ ./src
+cp -r /c/MyWeb/portfolio/src /c/MyWeb/portfolio/music-master     מעתיק מהסורס ליעד
+cp -r /c/MyWeb/portfolio/.babelrc /c/MyWeb/portfolio/music-master
+mv /c/MyWeb/portfolio/Music-master/fff.txt /c/MyWeb/Music-master/ss.txt  מעביר קובץ ממקום למקום עם שינוי שם אפילו
+mv /c/MyWeb/portfolio/Music-master /c/MyWeb/Music-master מעביר תיקיה לנתיב אחר
+
+cd .. יורד אחורה בתקיה
+ls -la מראה את שאר הקבצים
+cat .babelrc מציג את הפלאגין
+rm -rf src/assets/*.png מוחלק כל מה שבתקיה שמסתיים בסיומת
+ls src/assets מציג מה יש בתקיה
+start . פותח את התקיה של הנתיב
+. start פותח קומנדליין של הנתיב
+.cat יכנס לקובץ
+
+
+
+package.json מידע
+
+{
+  "name": "music-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html", /* //use parcel as source of where to build the actual project */
+    "build": "parcel build src/index.html", /* //to build a productiom version of the code */
+    "start": "npm run build && live-server dist" /* // fire live-server and dist actually start up a web application fpr built in the overall project */
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "live-server": "^1.2.1",
+    "parcel-bundler": "^1.10.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
+
+
+rcc+tab make new Component -> after extention es7 from visual studio code
+rcf+tab make new function-> after extention es7 from visual studio code
+alt+up take the word up
+alt+shift+up/down copy paste the word up/down
+ctrl+shift+k delete line
+ctrl+b מציג לי את החלון גדול יותר
+ctrl+pageup/pagedown move from component
+ctrl+tab chose component
+ctrl+1/2/3 move from group window if i open 2 windows editor
+shift+tab take back text
+
+
+cp -r /c/MyWeb/portfolio/music-master /c/music-master   copy מעתיק
+
+////for backend
+npm i express@4.16.4 --save backend
+node index.js  ..start in terminal
+npm i nodemon@1.18.9 --save-dev //allow us fireoff a diffrent alternatice engine than node, that restart the entire node server every time we make a change in the application
+
+
+
+
+https://github.com/material-components/material-components-web-react
+https://github.com/mui-org/material-ui/tree/master/docs/src/pages/premium-themes/paperbase
+https://jsonformatter.org/
+https://github.com/15Dkatz/react-bootcamp/tree/master/portfolio
+https://github.com/15Dkatz/official_joke_api
+https://github.com/bradtraversy/redux_crash_course
+https://jsonplaceholder.typicode.com/
+
+https://github.com/shahar7c/AssignmentApp
+
+
+שלבים  להתקנת ריאקט לפרויקט חדש + רידקס
+1.נכנסים לנתיב כונן שאנו רוצים דרך הטרמינל
+2.npm create-react-app folderprojectname
+3.נכנס לתקייה cd folderprojectname
+4.npm install redux react-redux התקנת רידקס לריאקט
+5.npm install redux thunk --save התקנת מידלוואר
+
+
+שלבים למעבר דפים בריאקט route
+1.נפתח את הטרמינל ונרשום  npm install react-router-dom --save
+npm i history --save שומר את ההיסטורי של הראוט
+
+
+npm install --save moment react-moment   שינוי פורמט תאריך
+npm install --save moment-timezone The moment-timezone package
+npm install --save react-bootstrap התקנת בוטסטרפ
+npm install @material-ui/core מטריאל    
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+
+npm i use-dark-mode
+
+npm install axios --save
+
+
+import { Link, NavLink } from 'react-router-dom';
+instead Link we have NavLink 
+NavLink - make style to titlelink when we inside the componenet --->activeClassName 
+ <NavLink exact to='/favorite' className="myClass" activeClassName ="main-nav-active">Favorites</NavLink>
+
+
+
+
+-----------------------------------GITHUB
+from gitbush command line
+
+version ? git --version
+delete git -->  rm -rf .git
+whats file there -->  ls la
+check status --> git status
+
+first add repestory in github
+go to dierctiory project in gitbash
+1. git init
+2. git add -A   or   git add .
+3. git config --global user.email "you@example.com"
+4. git config --global user.name "Your Name"
+5. git commit -m 'Init commit'
+6. git remote add origin https://github.com/doribasson/dori_weather.git
+7.git remote -v
+8.git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/doribasson/MyWeather.git
+git push -u origin master
+
+git pull origin master delete
+
+for update files in github
+--> git add .
+ -->git commit -m "Add existing file"
+--> git push -u origin master
+
+
+
+
+
+------------------------------- host
+pass- Dori87@gmail.com
+heroku for showing web
+help -> heroku --help
+
+1.cat .gitignore
+2.git log
+
+
+If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
+
+$ heroku login
+Create a new Git repository
+Initialize a git repository in a new or existing directory
+
+$ cd my-project/
+$ git init
+$ heroku git:remote -a dori-weather
+Deploy your application
+Commit your code to the repository and deploy it to Heroku using Git.
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+Existing Git repository
+For existing repositories, simply add the heroku remote
+
+
+You can change the app from app1 to app2 by using
+--> heroku git:remote -a app2
+
+$ heroku git:remote -a dori-weather
+delete app in heroku --> heroku apps:destroy name
+
+1. heroku create
+2. git push heroku master
+3. heroko open
+heroku config:set TOKEN=token123
+
+Step 1: heroku create ....This will create an app on heroku with an arbitrary name
+step 2: git remote -v  .... Shows the url of the remote servers you have configured.
+step 3: git remote rm heroku ....Go to your app on heroku and rename it there from settings of the app and save the newname. Now come back to the commandline you were previously working and continue with the following steps.
+Step 4: git remote add heroku git.heroku.com/dorib-weather.git
+Step 5: You can recheck if the remote url is changed using git remote -v
+Step 6: git push heroku master
+ 
+Push your app to heroku
+
+probelem with heroku 
+npm install serve --s
+
+"scripts": {
+"dev": "react-scripts start",
+"start": "serve -s build",
+"build": "react-scripts build",
+"test": "react-scripts test --env=jsdom",
+"eject": "react-scripts eject",
+"heroku-postbuild": "npm run build"
+}
+
+
+git init
+heroku create -b https://github.com/mars/create-react-app-buildpack.git
+git add .
+git commit -m "react-create-app on Heroku"
+git push heroku master
+heroku open
+
+
+You can simply rename existing heroku by simply using rename command.
+"heroku rename new_name"
+it will automatically rename both the local and remote server (heroku) at one step.
+
+שינוי שם של הדומיין דרך האתר הורקו בתקיה של הפרויקט
+
+For an existing Heroku app
+If you have already created your Heroku app, you can easily add a remote to your local repository with the heroku git:remote command. All you need is your Heroku app’s name:
+heroku git:remote -a thawing-inlet-61413
+set git remote heroku to https://git.heroku.com/thawing-inlet-61413.git
+git push heroku master
+
+set git remote heroku to https://github.com/doribasson/tsvika-weather.git
+
+Renaming remotes
+You can rename your remotes with the git remote rename command:
+git remote rename heroku heroku-staging
+
+
+אם נעשה שינוי בקוד ונרצה לעדכן בגיט ואז לעלות בהרוקו:
+Deploy your changes
+Make some changes to the code you just cloned and deploy them to Heroku using Git.
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+
+
+
+
+
+ heroku login
+Create a new Git repository
+Initialize a git repository in a new or existing directory
+
+$ cd my-project/
+$ git init
+$ heroku git:remote -a dorib-weather
+
+
+Deploy your application
+Commit your code to the repository and deploy it to Heroku using Git.
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+Existing Git repository
+For existing repositories, simply add the heroku remote
+
+$ heroku git:remote -a dorib-weather
+
+
+
+
+npm install -g create-react-app
+create-react-app my-app
+cd my-app
+git init
+heroku create -b https://github.com/mars/create-react-app-buildpack.git
+git add .
+git commit -m "react-create-app on Heroku"
+git push heroku master
+heroku open
+
+------------------------------------------------------------------------
+
+
+for createstore
+window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() : f => f )
+);
+
+https://developer.accuweather.com/ api weather
+
+https://reactjsexample.com/author/react/
+
+
+אם יש בעיה בהתקנה ההתחלתית:
+npm uninstall -g create-react-app
+npx create-react-app project-name
+או
+npm cache clean --force
+npm cache verify
+yarn create react-app my-app
+
+אחרים
+npm install create-react-app@latest
+npx create-react-app my-app [--template typescript]
+
+npm install --save react-animation
+
+
+npm install -g create-react-app
+create-react-app my-app
+cd my-app
+git init
+heroku create -b https://github.com/mars/create-react-app-buildpack.git
+git add .
+git commit -m "react-create-app on Heroku"
+git push heroku master
+heroku open
+
+yarn create react-app my-app
+
+yarn add react-responsive-carousel --save
+
+https://github.com/CodingGarden
+
+https://www.colorzilla.com/gradient-editor/ צבעים
+
+for new github
+cd project
+git init
+git add .
+git commit -m "first commit"
+git remote add origin git@github.com:username/guide-react-gh-pages.git
+git push -u origin master
+
+npm install gh-pages --save-dev          gh-pages=github pages
+
+packaage.json 
+"homepage": "https://myusername.github.io/guide-react-gh-pages",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+}
+npm run deploy
+
+
+
+
+
+loading style awsome
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<div class="fa-3x">
+  <i class="fas fa-spinner fa-spin"></i>
+  <i class="fas fa-circle-notch fa-spin"></i>
+  <i class="fas fa-sync fa-spin"></i>
+  <i class="fas fa-cog fa-spin"></i>
+  <i class="fas fa-spinner fa-pulse"></i>
+  <i class="fas fa-stroopwafel fa-spin"></i>
+</div>
+
+
+
+
+  componentDidMount() {
+    // const cities = ["ss", "dsfsdf", "gfdggf"];;
+    const SearchFromApi = async city => {
+      const res = await fetch(
+        "https://official-joke-api.appspot.com/random_ten"
+      );
+      const states = await res.json();
+      console.log(states);
+    };
+
+
+
+
+יעתיק הכל חוץ מnode_modules
+robocopy . c:\inetpub\. /IS /S /XD node_modules
+CMD פותח והולך לתיקיה
+c:\inetpub\. לשם יעתיק
+לא יעתיק את /XD node_modules
+
+
+
+
+
+
+
+for body center in the css 
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  font-family: sans-serif;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const firstRequest = axios.get('https://maps.googleapis.com/maps/api/geocode/json?&address=' + this.props.p1)
+      .then(response => this.setState({ p1Location: response.data }))  }
+
+const secondRequest = axios.get('https://maps.googleapis.com/maps/api/geocode/json?&address=' + this.props.p2)
+  .then(response => this.setState({ p2Location: response.data }))
+
+const thirdRequest = axios.get('https://maps.googleapis.com/maps/api/directions/json?origin=place_id:' + this.state.p1Location.results.place_id + '&destination=place_id:' + this.state.p2Location.results.place_id + '&key=' + 'API-KEY-HIDDEN')
+  .then(response => this.setState({ route: response.data }))
+
+
+Promise.all([firstRequest, secondRequest])
+       .then(() => {
+           return thirdRequest
+       })
+
+
+
+
+
+
+async componentDidMount(){
+    try{
+        const [request1, request2] = await Promise.all([
+           axios.get(`https://maps.googleapis.com/maps/api/geocode/json?&address=${this.props.p1}`),
+           axios.get(`https://maps.googleapis.com/maps/api/geocode/json?&address=${this.props.p2}`)
+        ]);
+
+        const request3 = await axios.get(`https://maps.googleapis.com/maps/api/directions/json?origin=place_id:${request1.data.results.place_id}&destination=place_id:${request2.data.results.place_id}&key=${API-KEY-HIDDEN}`);
+        console.log(request3);
+    }
+    catch(err){
+        console.log(err)
+    }
+}
+
+
+
+
+
+
+
+async componentDidMount() {
+
+  // Make first two requests
+  const [firstResponse, secondResponse] = await Promise.all([
+    axios.get(`https://maps.googleapis.com/maps/api/geocode/json?&address=${this.props.p1}`),
+    axios.get(`https://maps.googleapis.com/maps/api/geocode/json?&address=${this.props.p2}`)
+  ]);
+
+  // Make third request using responses from the first two
+  const thirdResponse = await axios.get('https://maps.googleapis.com/maps/api/directions/json?origin=place_id:' + firstResponse.data.results.place_id + '&destination=place_id:' + secondResponse.data.results.place_id + '&key=' + 'API-KEY-HIDDEN');
+
+  // Update state once with all 3 responses
+  this.setState({
+    p1Location: firstResponse.data,
+    p2Location: secondResponse.data,
+    route: thirdResponse.data,
+  });
+
+}
+
+
+
+
+
+cityInfo() {
+    axios.get(`https://www.metaweather.com/api/location/search/?query=${this.state.city}`)
+      .then(res => res.data)
+      .then(data => {
+        axios.get('https://www.metaweather.com/api/location/' + data[0].woeid)
+          .then(res => res.data)
+          .then (data => this.setState({
+            info: data
+          }))
+      });
+  }
+
+
+
+
+
+async await with annyoms function callback
+  componentDidMount() {
+    (async () => {
+      this.setState({ isMounted: true });
+      try {
+        let storedWeather = [];
+
+        storedWeather = await JSON.parse(localStorage.getItem("weatherInfo"));
+
+        if (storedWeather) {
+          storedWeather.map((cityName, i) => {
+            this.fetchCity(cityName);
+            return null;
+          });
+        }
+        setTimeout(() => {
+          this.setState({
+            loading: false
+          });
+        }, 1000);
+      } catch (e) {
+        console.log(e);
+      }
+    })();
+  }
+
+
+
+
+
+
+
+
+
+Hooks with functional componenet -- rafc+tab  rcf+tab   rafce+tab
+
+
+import React, { useEffect, useState } from "react";
+
+export const App = () => {
+  const [countries, setCountries] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    // (async function() {
+    //with anonymous function
+    (async () => {
+      try {
+        setLoading(true);
+        const response = await fetch("https://restcountries.eu/rest/v2/all");
+        const res = await response.json();
+        setLoading(false);
+        console.log(res);
+      } catch (err) {
+        console.error(err);
+        setError(err.message);
+        setLoading(false);
+      }
+    })();
+  }, []); //[], to make it like componentDidmount
+  //[var], make it like componentDidupdate just when var update
+  //without [] , make it like componentDidmount for all var that update ..update? setName("sdori") - Hooks state
+  if (!loading) {
+    return (
+      <ul>
+        {error ? (
+          <li>{error.message}</li>
+        ) : (
+          countries.map((country, index) => <li key={index}>{country.name}</li>)
+        )}
+      </ul>
+    );
+  } else {
+    return <div>Loading...</div>;
+  }
+};
+
+export default App;
+
+
+
+
+
+
+ריאקט הצגת דיב
+
+import React from "react";
+
+const App = () => {
+  return <div>ddddd</div>;
+};
+
+export default App;
+
+*************************************************************************************
+
+import React from "react";
+
+const App = () => <div>ddd</div>;
+
+export default App;
+
+import React from "react";
+
+const App = () => {
+  return (
+    <div>
+      <div>dsfdfds</div>
+      <div>aaaa</div>
+    </div>
+  );
+};
+
+export default App;
+
+*************************************************************************************
+
+import React from "react";
+
+const App = () => (
+  <div>
+    <div>dsfdfds</div>
+    <div>aaaassss</div>
+  </div>
+);
+
+export default App;
+
+*************************************************************************************
+
+import React from "react";
+
+const App = () => {
+  let a = 4;
+  if (a > 5)
+    return (
+      <div>
+        <div>dsfdfds</div>
+        <div>aaaassss</div>
+      </div>
+    );
+  else
+    return (
+      <div>
+        <div>vvvvvvvv</div>
+        <div>vvvvvvv</div>
+      </div>
+    );
+};
+
+export default App;
+
+*************************************************************************************
+
+
+import React from "react";
+
+const App = () => <div>{6 > 7 ? <div>sasaass</div> : <div>dsdadsa</div>}</div>;
+
+export default App;
+
+import React from "react";
+
+const App = () => (
+  <div>
+    {8 > 7 ? (
+      <div>
+        <div>sasaass</div>
+        <div>aaaasaass</div>
+        <div>bbbbbbbb</div>
+      </div>
+    ) : (
+      <div>dsdadsa</div>
+    )}
+  </div>
+);
+
+export default App;
+
+*************************************************************************************
+
+
+import React from "react";
+
+const App = () => (
+  <div>
+    {6 > 7 ? (
+      <div>
+        <div>sasaass</div>
+        <div>aaaasaass</div>
+        <div>bbbbbbbb</div>
+      </div>
+    ) : (
+      <div>
+        <div>dsdadsa</div>
+        <div>dsdadsa</div>
+        <div>dsdadsa</div>
+      </div>
+    )}
+  </div>
+);
+
+export default App;
+
+
+*********************************************************
+const App = () => {
+  if (9 > 6)
+    // if (5 > 6)
+    return (
+      <div>
+        {6 > 7 ? (
+          <div>
+            <div>sasaass</div>
+            <div>aaaasaass</div>
+            <div>bbbbbbbb</div>
+          </div>
+        ) : (
+          <div>
+            <div>dsdadsa</div>
+            <div>dsdadsa</div>
+            <div>dsdadsa</div>
+          </div>
+        )}
+      </div>
+    );
+  else return <div>not bigger then 9</div>;
+};
+
+export default App;
+

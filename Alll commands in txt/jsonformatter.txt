@@ -1,0 +1,62 @@
+﻿[
+  {
+    "id": 264,
+    "type": "general",
+    "setup": "What kind odsfdsffdsfdsf award did the dentist receive?",
+    "punchline": "A little plaque."
+  },
+  {
+    "id": 47,
+    "type": "general",
+    "setup": "ddfdffdhe eclipse through a colander.",
+    "punchline": "You'll strain your eyes."
+  },
+  {
+    "id": 134,
+    "type": "general",
+    "setup": "Hodfddfdfsw does a dyslexic poet write?",
+    "punchline": "Inverse."
+  },
+  {
+    "id": 244,
+    "type": "general",
+    "setup": "What dsdfsddssddo you get when you cross a snowman with a vampire?",
+    "punchline": "Frostbite."
+  },
+  {
+    "id": 78,
+    "type": "general",
+    "setup": "Hesdfsdfsfdsfdy, dad, did you get a haircut?",
+    "punchline": "No, I got them all cut."
+  },
+  {
+    "id": 38,
+    "type": "general",
+    "setup": "I'msdfdsdfssdf reading a book about anti-gravity...",
+    "punchline": "It's impossible to put down"
+  },
+  {
+    "id": 187,
+    "type": "general",
+    "setup": "Whatsdfsdfsfdfds did the late tomato say to the early tomato?",
+    "punchline": "I’ll ketch up"
+  },
+  {
+    "id": 69,
+    "type": "general",
+    "setup": "I Got Hitsdfdsfsdf In the Head By A Soda Can, But It Didn't Hurt That Much...",
+    "punchline": "It was a soft drink."
+  },
+  {
+    "id": 222,
+    "type": "general",
+    "setup": "Whsdfsdfsdfat do you call a monkey in a mine field?",
+    "punchline": "A babooooom!"
+  },
+  {
+    "id": 167,
+    "type": "general",
+    "setup": "What did Romandsffdsdfsfdss use to cut pizza before the rolling cutter was invented?",
+    "punchline": "Lil Caesars"
+  }
+]

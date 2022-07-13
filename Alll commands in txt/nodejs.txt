@@ -1,0 +1,87 @@
+mongodb+srv://dori:<password>@cluster0-uo8hs.gcp.mongodb.net/test?retryWrites=true&w=majority
+
+inside backend folder:
+node -v בודק גירסה ושיש לנו 
+npx create-react-app folderName 
+npm init -y מתקין את הגייסון
+npm install express cors mongoose dotenv  סוג של מידלוואר שמאפשר לנו גישה מחוץ לסרבר לתוך הסרברcors   
+npm install -g nodemon שיטען לנו אחרי כל שמירה בלי לעשות ריפרש לסרבר
+
+
+
+Insimnia and postman app tool that we install in our computer and we can post,get,delete,put from databese with the url
+http://localhost:5000/users/$id    -- delete req...  we delete the user with the $id 
+http://localhost:5000/users/   --get req.. in this we can get all the users in json
+
+http://localhost:5000/users/add    ---post ... here we can post new user
+ {
+	"username": "dorinew"	
+}
+
+
+
+React
+npx create-react-app מתקין תכנית ראשונה
+npm install bootstrap עיצובים של קומפוננטות כפתורים כוו
+npm install react-router-dom מתקין את כל הניתובים בין קומפננטות
+npm install react-datepicker  מתקין לוח שנה
+npm install axios
+touch mydirectory/filename.js
+$ mkdir src/components   יוצר תקייה
+$ touch src/components/Child1.js && code -r src/components/Child1.js
+
+
+
+
+
+
+
+npm init מתקין קובץ package.json // npm init -y  מתקין קובץ בלי כל האישורים package.json
+npm install express פריימוואר שעוזר עם פקודות הסרבר
+npm install nodemon מתעדכן אוטומטי אחרי ששומרים בלי להפעיל מחדש את הסרבר
+npm i --save-dev nodemon
+npm install mongoose -  חבילה שמקלה עלינו עם הדטה בייס 
+npm install dotenv - מאפשר לנו להסתיר את השם משתמש והסיסמא כך שלא יהיה בקומפוננטה בהתחברות לדטה בייס
+npm install body-parser  - שנוכל להציג הודעה פוסט מהדטה בייס לתוך הקונסול שלנו כי אם לא אם לא יכיר אותו כשנעשה req.body
+npm install cors  - מאפשר גישה origin policy
+npm install @hapi/joi - ספרייה מוכנה שמאפשרת וולידזציה של אמייל סיסמא וכו ברגיסטר ובלוגין
+npm uninstall --save @hapi/joi -מחיקת ספרייה
+npm install --save @hapi/joi@15.0.3  - הגרסה שעובדת שאפשר לעשות וואלידזציהה
+
+
+doribassonapi@gmail.com dori1987
+בדיקה באתר codpen 
+fetch('http://localhost:5001/posts')         .....localhost:5002/api/user/register
+.then(result => {
+  return result.json();
+})
+.then(data => {
+console.log(data);
+})
+
+
+קודם נכין תקיה בשם הפרויקט
+נתקין את הפאקצ גייסון
+נכין את הקבצי js
+נתקין את האקפרסס ואת הנודמון
+אחרי זה נייבא את האקפרסס לקובץ
+נשנה את בפקאצגייסון את הפקודה שיפעיל עם הנודמון
+נראה שהסרבר מאזין
+נתקין את המונגוס שיעזור לנו ויקצר תהליכים עם הדטה בייס
+נעשה קונקט והקישור עם הקוד שהביאו לנו מהדטה בייס לסרבר
+נתקין את בשביל שיסתיר לנו את הקישור של הקוד והסיסמא לדטה בייס דרך קובץ נוסף שיקרא . .dotebv 
+.env
+נעשה תקייה מודל ושם נכנסים את הפרמטרים של המודל שלנו למשל יוזר יש לו שם ונגדיר לו כמות תווים וכו שזה מה שיכנס לדטה בייס                                         
+ואז בתוך תקיית הרואטס ובתוך הקובץ שאתו עובדים פה זה האוטנטיקשין נייבא את היוזר ונשתמש בו שמה
+נתקין באדיפרסר בשביל שנראה מהדטה לקונסול שלנו שזה עובד
+
+
+
+ctrl+shift+p type: tclear   מנקה טרמינל 
+או שנעשה קיצור בויזואל סטודיו
+file->prefernces->keyboard shorcut -> terminal clear -> ctrl+k נרשום
+
+for mongodb
+email: doribasson87 password: dori1987
+email: doribassonapi password: dori1987
+mongodb+srv://dori1234:<password>@cluster0-mvjk2.mongodb.net/test?retryWrites=true&w=majority

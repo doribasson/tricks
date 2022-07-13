@@ -1,0 +1,33 @@
+    fetch(
+      `https://pixabay.com/api/?key=15000270-1279a6523a9b535cc0ef72edf&q=${str}&image_type=photo`
+    )
+
+
+https://cors-anywhere.herokuapp.com/
+    const proxy = "https://cors-anywhere.herokuapp.com/";
+    const res = await fetch(`${proxy}https://api.500px.com/v1/photos/search?type=photos&image_size%5B%5D=14&formats=jpeg&term=${searchTerm}`);
+
+
+      const proxy = "https://cors-anywhere.herokuapp.com/";
+      const api = `${proxy}https://api.darksky.net/forecast/ac3b178a30a8bd5e98b7bdc85ae2e511/${lat},${long}`;
+
+
+        const url = "https//api.randomuser.me/";
+        const response =  fetch(url); //make it now secronyize because the wait..so he wait from fetch finish
+
+  fetch('https://jsonplaceholder.typicode.com/posts')
+
+fetch('https://official-joke-api.appspot.com/random_joke')
+
+
+fetch('https://official-joke-api.appspot.com/random_ten')
+"https://jsonplaceholder.typicode.com/posts"
+
+https://restcountries.eu/#rest-countries-users'
+https://restcountries.eu/rest/v2/all
+
+ "https://api.storyblok.com/v1/cdn/stories/health?version=published&token=wANpEQEsMYGOwLxwXQ76Ggtt";
+      "https://api.storyblok.com/v1/cdn/datasources/?token=wANpEQEsMYGOwLxwXQ76Ggtt";
+      "https://api.storyblok.com/v1/cdn/stories/vue?version=published&token=wANpEQEsMYGOwLxwXQ76Ggtt";
+
+

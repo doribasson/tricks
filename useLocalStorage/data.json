@@ -1,0 +1,38 @@
+[
+    {
+      "siteId": 1,
+      "siteName": "lala",
+      "siteIp": "123.2133.21",
+      "platform": "Public Cloud",
+      "healthStatus": "Failure"
+    },
+    {
+      "siteId": 2,
+      "siteName": "a",
+      "siteIp": "55.99.21",
+      "platform": "VMware",
+      "healthStatus": "Warning"
+    },
+    {
+      "siteId": 3,
+      "siteName": "b",
+      "siteIp": "55.77.21",
+      "platform": "Hyper",
+      "healthStatus": "Failure"
+    },
+    {
+      "siteId": 4,
+      "siteName": "c",
+      "siteIp": "55.66.21",
+      "platform": "Hyper",
+      "healthStatus": "Warning"
+    },
+    {
+      "siteId": 5,
+      "siteName": "d",
+      "siteIp": "55.33.21",
+      "platform": "VMware",
+      "healthStatus": "Good"
+    }
+  ]
+  
