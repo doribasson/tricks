@@ -170,3 +170,44 @@ function splitDupAndNotDup(str) {
 
 const res = splitDupAndNotDup("doooorri");
 console.log(res);
+
+
+
+
+
+
+
+
+
+
+// **************************************************************************************
+// **************************************************************************************
+// **************************************************************************************
+
+
+// FindDuplicate מציאת כפילויות של סטרינג על ידי אובייקט עם
+// Key and value
+// כל key משמש כתו וה value שלו גדל ב 1 כל דריסה של אותו שם key.
+
+// const strArray = ["q", "w", "e", "w", "i", "u", "r", "u", "w", "q"];
+
+function findDup(str) {
+  const alreadySeen = {};
+  let dup = "";
+
+  str.split("").forEach((str) => {
+    if (alreadySeen[str]) {
+      alreadySeen[str] += 1;
+      if (alreadySeen[str] === 2) dup += str;
+    } else alreadySeen[str] = 1;
+  });
+  dup ? dup : (dup = "none");
+
+  // console.log(alreadySeen);
+
+  return { alreadySeen, dup };
+}
+
+const res = findDup("tesyyacttc");
+console.log(res);
+
