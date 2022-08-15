@@ -69,3 +69,13 @@ Find the Content Useful? [You can always buy me a coffee](https://www.buymeacoff
 
 
 https://react-projects.netlify.app/
+
+
+reeux
+old with typescript - https://dev.to/tris909/how-to-use-redux-with-typescript-1oag
+
+https://redux.js.org/tutorials/essentials/part-1-overview-concepts
+https://redux.js.org/tutorials/fundamentals/part-1-overview
+https://redux.js.org/recipes/usage-with-typescript
+https://redux.js.org/style-guide/style-guide
+https://github.com/reduxjs/cra-template-redux-typescript
